@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script id="script" type="text/javascript" src="IMC.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cálculo de IMC</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-3" id="formArea" >
+            <blockquote class="blockquote text-center">
+                <p class="h2">Cálculo de IMC</p>
+            </blockquote>
+            <form>
+                <div class="form-group">
+                    <label for="idade" class="h6">Idade</label>
+                    <div class="row">
+                        <div class="col col-9">
+                            <input type="number" class="form-control" id="idade" aria-describedby="idadeAjuda" placeholder="35" required>
+                        </div>
+                        <div class="col">
+                            <p>anos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="altura" class="h6">Altura</label>
+                    <div class="row">
+                        <div class="col col-9">
+                            <input type="number" class="form-control" id="altura" aria-describedby="alturaAjuda" placeholder="160" required>
+                        </div>
+                        <div class="col">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso</label>
+                    <div class="row">
+                        <div class="col col-9">
+                            <input type="number" class="form-control" id="peso" aria-describedby="pesoAjuda" placeholder="60" required>
+                        </div>
+                        <div class="col">
+                            <p>kg</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="submit" class="btn btn-primary btn-block" onclick="calcularIMC()">Calcular</button>
+            </form>
+            <p id="imc" class="h5"></p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col col-3" id="mensagemAdicional">
+            <p id="mensagemAdicional"></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
